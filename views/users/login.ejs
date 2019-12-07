@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+    <div id="login-container">
+        <h3>Login</h3>
+        <form action="/login" method="POST">
+            <label class="normal-text">Username</label>
+            <input id="username-area" type="text" name="username" required>
+
+            <label class="normal-text">Password</label>
+            <input id="password-area" type="password" name="password" required>
+
+            <button id="forgot-button" type="button" ><a href="/reset-password">Forgot Password</a></button>
+            <button id="login-button" type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

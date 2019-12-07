@@ -1,0 +1,58 @@
+#edit-container{
+    margin: 15% auto;
+    width: 32%;
+    padding: 15px;
+    background-color: #1A0315;
+    outline: 3px solid #0E0B16;
+    color: white;
+}
+
+.text-label{
+    margin-bottom: -5px;
+}
+
+.textArea{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#lowerCase{
+    margin-left: 50px;
+}
+
+#symbols{
+    margin-left: 67px;
+}
+
+#slider-container{
+    display: inline-flex;
+}
+
+#passwordLength{
+    width: 90%;
+    color: #0E0B16;
+    border-radius: 5px;
+}
+
+#sixFigure, #twentyFigure{
+    margin-top: -2px;
+    margin-right: 2px;
+}
+
+#generateButton, #update-button{
+    height: 35px;
+    background-color: #0E0B16;
+    color: white;
+    border-radius: 10px;
+}
+
+#update-button{
+    float: right;
+}
+
+#generateButton:hover, #update-button:hover{
+    color: #A239CA;
+    background-color: white;
+    transition: 0.25s;
+}

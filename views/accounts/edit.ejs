@@ -1,0 +1,47 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+    <div id="edit-container">
+        <h3>Edit Account Details</h3>
+        <form action="/accounts/<%= account.id %>?_method=PUT" method="POST">
+            <label class="text-label">Title</label>
+            <input class="textArea" type="text" name="title" value="<%= account.title%>">
+
+            <label class="text-label">Url</label>
+            <input class="textArea" type="text" name="url" value="<%= account.url%>">
+
+            <label class="text-label">Username</label>
+            <input class="textArea" type="text" name="username" value="<%= account.username%>" required>
+
+            <label class="text-label">Password</label>
+            <input class="textArea" id="generatedPassword" type="text" name="password" value="<%= account.password%>" required>
+
+
+
+            <input id="upperCase" type="checkbox">
+            <label>Upper Case</label>
+
+            <input id="lowerCase" type="checkbox">
+            <label>Lower Case</label>
+
+            <br/>
+            <input id="numbers" type="checkbox">
+            <label>Numbers</label>
+
+            <input id="symbols" type="checkbox">
+            <label>Symbols</label>
+            <br/>
+            <div id="slider-container">
+                <p id="sixFigure">6</p>
+                <input id="passwordLength" class="custom-range" type="range" min="6" max="20" data-slider-orientation="vertical" name="passwordLength" placeholder="">
+                <p id="twentyFigure">20</p>
+            </div>
+            <button id="generateButton" type="button">Generate</button>
+            <button id="update-button" type="submit">Update</button>
+
+        </form>
+    </div>
+</div>
+
+<script src="/js/password-generator.js"></script>
+<%- include('../partials/footer') %>

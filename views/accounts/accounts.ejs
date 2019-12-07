@@ -1,0 +1,24 @@
+<%- include('../partials/header') %>
+<div class="container ">
+
+<% foundUser.accounts.forEach(function(account){ %>
+    <div class="account-cards">
+        <div class="small-icon"><img src="copyright-free-images/icons/lock.png"></div>
+
+        <% if(account.title === ""){ %>
+            <p>No Title</p>
+        <% } else { %>
+            <p><%= account.title %></p>
+        <% }%>
+
+        <p class="show-button">
+            <a href="/accounts/<%= account._id %>">View</a>
+        </p>
+    </div>
+<% }); %>
+
+    <div>
+        <a id="new-account-button" href="/accounts/new">Add a new Account</a>
+    </div>
+</div>
+<%- include('../partials/footer') %>

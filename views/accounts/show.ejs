@@ -1,0 +1,28 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+    <div class="show-container">
+
+        <% if(account.title === ''){ %>
+                <h3 id="title-text">No Title<form action="/accounts/<%= account.id%>?_method=DELETE" method="POST"><button id="delete-button" type="submit">Delete</button></form></h3>
+        <%} else { %>
+                <h3 id="title-text"><%= account.title%> <form action="/accounts/<%= account.id%>?_method=DELETE" method="POST"><button id="delete-button" type="submit">Delete</button></form></h3>
+        <%} %>
+
+        <label id="url-text">URL</label>
+        <input id="url-area" type="text" name="url" value="<%= account.url %>" disabled>
+
+        <label id="username-text">Username</label>
+        <input id="username-area" type="text" name="username" value="<%= account.username %>" disabled>
+
+        <label id="password-text">Password</label>
+        <input id="password-area" type="password" name="password" value="<%= account.password %>" disabled>
+
+
+        <button id="show-password-button" type="button">Show Password</button>
+        <button id="edit-button" type="button"><a href="/accounts/<%= account.id%>/edit">Edit</a></button>
+    </div>
+</div>
+
+<script src="/js/show.js"></script>
+<%- include('../partials/footer') %>

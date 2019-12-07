@@ -1,0 +1,47 @@
+#login-container{
+    width: 30%;
+    margin: 15% auto;
+    padding: 20px;
+    background-color: #1A0315;
+}
+
+#login-container h3{
+    color: white;
+    text-align: center;
+}
+
+.normal-text{
+    color: white;
+    margin-bottom: -1px;
+}
+
+#username-area, #password-area{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#forgot-button, #login-button{
+    background-color: #1A0315;
+    color: white;
+    border-radius: 5px;
+}
+
+#forgot-button a{
+    text-decoration: none;
+    color: white;
+}
+
+#forgot-button a:hover{
+    color: #A239CA;
+}
+
+#forgot-button:hover, #login-button:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #A239CA;
+    transition: 0.25s;
+}
+
+#login-button{
+    float: right;
+}

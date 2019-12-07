@@ -1,0 +1,39 @@
+#navigation-block{
+    margin-top: -10px;
+    width: 100%;
+    height: 60px;
+    background-color: #1A0315;
+}
+
+#main-logo a{
+    position: absolute;
+    margin-top: 5px;
+    color: aliceblue;
+    margin-left: 20px;
+}
+
+#main-logo a:hover{
+    text-decoration: none;
+}
+
+#nav-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#nav-list li {
+    margin-top: 18px;
+    margin-right: 20px;
+}
+
+#nav-list li a{
+    color: aliceblue;
+}
+
+#nav-list li a:hover{
+    color: #A239CA;
+    text-decoration: none;
+    transition: 0.2s;
+}
+

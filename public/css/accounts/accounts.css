@@ -1,0 +1,59 @@
+.account-cards{
+    float: left;
+    width: 230px;
+    outline: 3px solid #0E0B16;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.small-icon{
+    width: 100%;
+    height: 50px;
+}
+
+.small-icon img{
+    margin-top: 10px;
+    margin-left: 40%;
+    height: 35px;
+}
+
+.account-cards p {
+    margin: 5px;
+}
+
+.show-button{
+    background-color: #0E0B16;
+    width: 75px;
+    height: 30px;
+    padding: 2px 0 0 18px;
+    border-radius: 6px;
+}
+
+.show-button a{
+    color: white;
+}
+
+.show-button a:hover{
+    text-decoration: none;
+    color: #A239CA;
+}
+
+#new-account-button{
+    margin-top: 30px;
+    margin-left: 40px;
+    padding-top: 12px;
+    text-align: center;
+    float: left;
+    width: 175px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #0E0B16;
+    color: white;
+}
+
+#new-account-button:hover{
+    color: #A239CA;
+    text-decoration: none;
+    transition: 0.2s;
+}
+

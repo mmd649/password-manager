@@ -1,0 +1,41 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+    <form action="/accounts" method="POST">
+        <div id="gen-container">
+            <h3>Add new Account</h3>
+            <div>
+                <input class="textArea" type="text" name="account[title]" placeholder="Title (Optional)">
+                <input class="textArea" type="text" name="account[url]" placeholder="URL (Optional)">
+                <input class="textArea" type="text" name="account[username]" placeholder="Username" required>
+                <input class="textArea" id="generatedPassword" type="text" name="account[password]" placeholder="Password" required>
+
+                <input id="upperCase" type="checkbox">
+                <label>Upper Case</label>
+
+                <input id="lowerCase" type="checkbox">
+                <label>Lower Case</label>
+
+                <br/>
+                <input id="numbers" type="checkbox">
+                <label>Numbers</label>
+
+                <input id="symbols" type="checkbox">
+                <label>Symbols</label>
+                <br/>
+                <div id="slider-container">
+                    <p id="sixFigure">6</p>
+                    <input id="passwordLength" class="custom-range" type="range" min="6" max="20" data-slider-orientation="vertical" name="passwordLength" placeholder="">
+                    <p id="twentyFigure">20</p>
+                </div>
+                <button id="generateButton" type="button">Generate</button>
+                <button id="saveButton" type="submit">Save</button>
+
+            </div>
+        </div>
+    </form>
+
+</div>
+
+<script src="/js/password-generator.js"></script>
+<%- include('../partials/footer') %>
