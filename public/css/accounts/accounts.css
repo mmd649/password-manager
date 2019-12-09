@@ -1,3 +1,6 @@
+#accounts-container{
+    width: 100%;
+}
 .account-cards{
     float: left;
     width: 230px;
@@ -15,6 +18,10 @@
     margin-top: 10px;
     margin-left: 40%;
     height: 35px;
+}
+
+.acc-title{
+    text-align: center;
 }
 
 .account-cards p {
@@ -57,3 +64,28 @@
     transition: 0.2s;
 }
 
+@media screen and (max-width: 992px) {
+
+    .account-cards{
+        margin-right: 60px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .account-cards{
+        width: 300px;
+        
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .account-cards{
+        width: 250px;
+        
+    }
+
+}

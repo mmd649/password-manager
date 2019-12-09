@@ -33,3 +33,47 @@
     color: #A239CA;
     transition: 0.25s;
 }
+
+@media screen and (max-width: 1199px) {
+
+    #register-container{
+        width: 40%;
+    }
+
+    #create-account-text{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    #register-container{
+        width: 50%;
+    }
+
+    #create-account-text{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #register-container{
+        width: 60%;
+    }
+
+    #create-account-text{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #register-container{
+        width: 70%;
+    }
+
+    #create-account-text{
+        font-size: 20px;
+    }
+}

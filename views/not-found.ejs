@@ -1,5 +1,9 @@
 <%- include('partials/header') %>
-
-<h1 class="container">Welcome to index</h1>
-
+<div class="container">
+    <div id="main-content">
+        <h1 id="main-title">Page Not Found</h1>
+        <p>The page you are trying to access does not exist. <%= notFound %> is an invalid URL. Please make sure you have entered the correct URL.</p>
+        <a id="home-button" href="/">Home</a>
+    </div>
+</div>
 <%- include('partials/footer') %>

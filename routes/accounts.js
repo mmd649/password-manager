@@ -66,7 +66,7 @@ router.post('/accounts', isLoggedIn, (req, res) =>{
 
 //Show
 router.get('/accounts/:id', isLoggedIn, (req, res) => {
-    res.locals.pageTitle = 'Show';
+    res.locals.pageTitle = 'View Account';
     res.locals.stylesheet = 'accounts/show';
 
     Account.findById(req.params.id, (err, selectedAccount) =>{
@@ -87,7 +87,7 @@ router.get('/accounts/:id', isLoggedIn, (req, res) => {
 
 //Edit
 router.get('/accounts/:id/edit', isLoggedIn, (req, res) => {
-    res.locals.pageTitle = 'Edit';
+    res.locals.pageTitle = 'Edit Account';
     res.locals.stylesheet = 'accounts/edit';
 
     Account.findById(req.params.id, (err, editAccount) =>{

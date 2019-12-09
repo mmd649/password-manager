@@ -53,3 +53,51 @@
     background-color: white;
     transition: 0.25s;
 }
+
+@media screen and (max-width: 1200px) {
+    
+    #gen-container{
+        width: 35%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    #gen-container{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    #gen-container{
+        width: 65%;
+    }
+
+}
+
+@media screen and (max-width: 525px) {
+    
+    #gen-container{
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    
+    #gen-container{
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+    
+    #gen-container{
+        width: 100%;
+    }
+
+}

@@ -56,3 +56,33 @@
     background-color: white;
     transition: 0.25s;
 }
+
+@media screen and (max-width: 1200px) {
+    #edit-container{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #edit-container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #edit-container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    #edit-container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #edit-container{
+        width: 100%;
+    }
+}

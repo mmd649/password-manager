@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 router.get('*', (req, res) => {
     res.locals.pageTitle = 'Page not Found';
     res.locals.stylesheet = 'not-found';
-    res.render('not-found');
+    res.render('not-found', {notFound: req.path});
 });
 
 module.exports = router;

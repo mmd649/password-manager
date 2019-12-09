@@ -11,9 +11,17 @@ const   express     = require('express'),
 router.get('/register', (req, res) => {
     res.locals.pageTitle = 'Register';
     res.locals.stylesheet = 'users/register';
-    res.render('users/register');
+
+    if(req.user){
+        res.redirect('/accounts');
+    } else {
+        res.render('users/register');
+    }
 });
 
+/* Deals with the post request when user registers. Checks the database if the username already 
+   exist, if not then create the new user account. Redirects to account homepage.
+*/
 router.post('/register', (req, res) => {
     if(req.body.password === req.body.verify){
         User.register(new User({username:req.body.username}), req.body.password, (err, newUser) =>{
@@ -41,6 +49,8 @@ router.get('/login', (req, res) => {
     res.render('users/login')
 });
 
+//Simple Login process. If user login fails, redirect to login page.
+//If successful, redirect to accounts page
 router.post('/login', passport.authenticate('local',
     {
         successRedirect: '/accounts',

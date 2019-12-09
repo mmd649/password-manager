@@ -1,0 +1,33 @@
+#main-content{
+    margin: 20px;
+    background-color: #1A0315;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#main-title{
+    color: white;
+}
+
+#main-content p {
+    margin: 10px;
+    color: white;
+    margin-top: 20px;
+}
+
+#home-button{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    color: #1A0315;
+}
+
+#home-button:hover{
+    border: 1px solid white;
+    background-color: #1A0315;
+    transition: 0.25s;
+    color: white;
+}
+
+
